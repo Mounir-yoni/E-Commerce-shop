@@ -1,0 +1,47 @@
+
+/* slider */
+.slider-img{
+    height: 400px ;
+}
+.slider-text{
+    font-family: "IBM Plex Sans Arabic", serif;
+}
+
+/* category */
+.catimg{
+    height: 120px;
+    width: 120px;
+    margin: 35px;
+}   
+.ll{
+    color: #a1eebda5;
+}
+
+/* product */
+
+.body-card{
+    font-family: "IBM Plex Sans Arabic", serif;
+}
+
+/* discount */
+
+.discount-backcolor {
+    height: 130px;
+    border-radius: 8px;
+    background: radial-gradient(circle, #767676 0%, #4d4f50 100%, #494c4d 100%);
+  }
+  .discount-title {
+    color: #ffffff;
+    font-family: Cairo;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 39px;
+    font-family: "IBM Plex Sans Arabic", serif;
+
+  }
+
+  .brand-img{
+    height: 200px;
+    width: 250px;
+  }

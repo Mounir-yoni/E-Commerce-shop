@@ -1,0 +1,16 @@
+
+.cat-text-header {
+    color: #000000;
+    font-family: "Almarai";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 23px;
+    padding-top: 10px;
+    margin-left: 17px;
+    font-family: "IBM Plex Sans Arabic", serif;
+    cursor: pointer;
+  }
+  .cat-text-header:hover {
+    color: #555550;
+  }

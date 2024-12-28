@@ -1,0 +1,35 @@
+.div-navbar{
+    display: flex;
+
+}
+.div-img{
+    margin:9px 0 9px 7%;
+}
+
+.navbar-logo{
+    height: 50px;
+    width: 70px;
+    margin-left: 5%;
+}   
+
+.search-input-div{
+    width: 60%;
+    margin-left: 3%;
+}
+
+.login-btn, .car-btn{
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 150px;
+    height: 50px;
+}
+
+
+.footer-phone {
+    color: #979797;
+    font-family: "Almarai";
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+  }
