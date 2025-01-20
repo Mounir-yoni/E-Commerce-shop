@@ -1,0 +1,46 @@
+/* Fade-in animation for the entire container */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animated-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Slide-in from the left animation */
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animated-slide-left {
+    animation: slideLeft 1s ease-in-out;
+  }
+  
+  /* Slide-in from the right animation */
+  @keyframes slideRight {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animated-slide-right {
+    animation: slideRight 1s ease-in-out;
+  }
+  

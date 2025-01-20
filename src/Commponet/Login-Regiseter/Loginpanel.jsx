@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import './Login-Register.css';
+import { Toaster, toast } from 'sonner'
 
 export default function Loginpanel() {
     const StyledWrapper = styled.div`
@@ -64,12 +66,12 @@ export default function Loginpanel() {
 
   #btn:hover,
   :focus {
+      background-color: #2a9d8f;
     color: #ffffff;
-    background:#272529;
-    border: 1px solid #272529;
+    border: 1px solid #2a9d8f;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-    box-shadow: 0 0 5px #272529, 0 0 10px #272529, 0 0 40px #272529,
-      0 0 100px #272529;
+    box-shadow: 0 0 5px #2a9d8f, 0 0 10px #2a9d8f, 0 0 40px #2a9d8f,
+      0 0 100px #2a9d8f;
   }`;
 
   const StyledWrapperloading = styled.div`
@@ -219,8 +221,10 @@ export default function Loginpanel() {
 
     return(
         
-        <Container fluid="xl" className=' d-flex flex-column align-items-center'>
-        <div className='' style={{textAlign:"center",marginTop:"100px"}}>
+        <Container fluid="xl" className=' d-flex flex-column align-items-center  '>
+                    <Toaster closeButton position="top-right" expand={true}  richColors  style={{margin:'60px'}}/>
+          
+        <div className='login-tran' style={{textAlign:"center",marginTop:"100px"}}>
             <header style={{width:"100%",textAlign:"center"}}> 
                 <h1>Login</h1>
             </header>
@@ -238,11 +242,11 @@ export default function Loginpanel() {
             </StyledWrapper>
 
             <StyledWrapperbutton>
-            <button id="btn" onClick={() => setLoading(true)}>Login</button>
+            <button id="btn" onClick={() => {setLoading(true);toast.success('success message')}}>Login</button>
             </StyledWrapperbutton>
 
             <StyledWrapperbutton>
-            <button id="btn" onClick={() => setLoading(true)} style={{marginTop:"10px"}}>Login As Admin</button>
+            <button id="btn" onClick={() => {setLoading(true);toast.info('This option is under development.')}} style={{marginTop:"10px"}}>Login As Admin</button>
             </StyledWrapperbutton>
 
 
@@ -261,17 +265,17 @@ export default function Loginpanel() {
 
 
 
-            </div>
-            {loading && (
-  <StyledWrapperloading>
-    <div className="dot-spinner" style={{ marginTop: "50px" }}>
-      {Array(8).fill().map((_, index) => (
-        <div className="dot-spinner__dot" key={index} />
-      ))}
-    </div>
-  </StyledWrapperloading>
+                {loading && (
+                  <StyledWrapperloading>
+        <div className="dot-spinner" style={{ margin: "50px auto 15px" }}>
+          {Array(8).fill().map((_, index) => (
+            <div className="dot-spinner__dot" key={index} />
+          ))}
+        </div>
+      </StyledWrapperloading>
 )}
             <h2 style={{fontFamily:'IBM Plex Sans Arabic', fontSize:'20px',margin:'0'}}>Don't have an account? <a href="/register">Register</a></h2>
+</div>
 
         </Container>
     )

@@ -45,3 +45,35 @@
     height: 200px;
     width: 250px;
   }
+
+
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Optional: Add hover effect on cards */
+  .brand-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+
+
+  .card {
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: translateY(-30px); /* Slightly reduced hover effect */
+  }

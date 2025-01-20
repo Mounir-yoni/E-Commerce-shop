@@ -687,5 +687,96 @@ body {
 font-weight: bold !important;
 }
 .ddsq{
-  background-color: #fdf9f929;
+  background-color: #6d6d6d75;
+}
+
+
+
+
+
+
+/* General container styles */
+.container-custom {
+  width: 100%;
+  height: 90.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login panel styles */
+.login-container {
+  min-width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Welcome section styles */
+.welcome-section {
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  background-color: #333; /* Dark background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.welcome-title {
+  color: #2a9d8f;
+  margin: 10% 0 0;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.welcome-subtitle {
+  color: white;
+  margin: 5% 0;
+  font-size: 2rem;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+/* Loader section styles */
+.loader-container {
+  margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .container-custom{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .login-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .welcome-section {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .welcome-title {
+    font-size: 2.5rem;
+    margin-top: 5%;
+  }
+
+  .welcome-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 1.2rem;
+  }
 }

@@ -4,7 +4,7 @@ import laptops from '../../image/laptops.png'
 import './Home-style.css'
 const DiscountSection = () => {
     return (
-        <Container style={{maxWidth:"77%"}}>
+        <Container style={{maxWidth:"77%"}} className='fade-in'>
             <Row className="discount-backcolor my-3  d-flex text-center align-items-center">
                 <Col sm="6">
                     <div className="discount-title">

@@ -1,0 +1,20 @@
+.login-tran, .register-tran {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation: login-register-animation 1s ease-in-out forwards;
+}
+
+@keyframes login-register-animation {
+    0% {
+        transform: translateX(-800px); /* Start off-screen */
+        opacity: 0.1; /* Start with low opacity */
+    }
+
+
+
+    100% {
+        transform: translateX(0); /* End at the final position */
+        opacity: 1; /* Fully visible */
+    }
+}
